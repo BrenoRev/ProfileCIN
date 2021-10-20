@@ -1,27 +1,93 @@
+/* Geral */
 *{
     --principal-bg: #4F4F4F;
     --secundaria-bg: #CCCCCC;
+    padding: 0px;
+    margin: 0px;
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--principal-bg);
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */ 
+
+#header{
+    position: absolute;
+    background-color: var(--secundaria-bg);
+    height: 1000px;
+    width: 100px;
+    left: -200px;
+    border-radius: 0px 10px;
+    box-shadow: 0px -3px 3px var(--principal-bg)
+}
+
+li > a{
+    font-size: 20px;
+    padding: 20px 5px;
+    display: block;
+}
+li > a:hover{
+    background-color: var(--principal-bg);
+    color: white;
+}
+
+ul{
+    position: relative;
+    top: 80px;
+    list-style: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ #header{
+    transform: translateX(200px);
+}
+
+#img_menu{
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--secundaria-bg);
+    padding: 10px;
+    width: 60px;
+}
+
+label {
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+}
+
+label:hover{
+    width: 100px;
+    background-color: var(--principal-bg);
+}
+#img_menu:hover{
+    background-color: transparent;
+}
+
+/* Footer */
 
 #footer{
     position: fixed;
     bottom: 0;
 
-    box-shadow: 0px -3px 3px #4F4F4F;
+    box-shadow: 0px -3px 3px var(--principal-bg);
     background-color: var(--secundaria-bg);
 
     padding: 10px;
 
     height: max-content;
     width: 100%;
-
 }
+
 
 #footer > span {
     font-size: 1.3rem;
