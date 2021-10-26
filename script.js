@@ -11,3 +11,9 @@ card.addEventListener("click", (e)=>{
 window.onload = function () {
      iniciar() 
     } 
+
+
+
+
+
+       

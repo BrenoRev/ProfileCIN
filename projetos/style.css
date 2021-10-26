@@ -18,6 +18,10 @@ a {
     color: black;
 }
 
+.mobile{
+    display: none;
+}
+
 /* Header */ 
 
 #header{
@@ -99,108 +103,16 @@ label:hover{
     font-size: 1.3rem;
 }
 
-/* Card */
-#secao{
+/* Principal */
 
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.conteudo{
-
-    position: relative;
-    top: 50px;
-    padding: 20px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: center;
-    width: 420px;
-    height: 614px;
-}
-
-
-.imagem{
-    background-size: cover;
-    height: 400px;
-    padding-left: 20px;
-    width: 350px;
-}
-
-.topCard{
-    font-size: 60px;
-    padding: 20px;
-    padding-top: 0px;
-}
-
-.cargo{
-    font-size: 16px;
-    text-align: center;
-}
-
-.tell{
-    font-size: 19px;
-    height: 10px;
-}
-
-.info{
-    background-size: cover;
-    padding-top: 20px;
-    padding-left: 10px;
-    height: 50px;
-    width: 100%; 
-}
-
-/* Sobre */
-
-.face{
-    background-color: white;
-    display: flex;
+.projetos{
     position: absolute;
-    top: 50px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 460px;
-    height: 654px;
+    top: 30px;
+    left: 150px;
 }
 
-.back{
-    line-height: 35px;
-    margin-left: 30px;
-    background-color: white;
-    display: flex;
-    position: relative;
-    top: 50px;
-    margin: 0;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    width: 460px;
-    height: 654px;
-}
-
-.back > h2{
-    margin-top: 45px;
-    margin-left: 0px;
-}
-
-#carta{
-    display: flex;
-    justify-content: center;
-    transform-style: preserve-3d;
-}
-
-#front{
-    transform: rotateY(180deg)
-}
-
-.flip{
-    transform: rotateY(180deg)
+@media screen and (max-width: 600px){
+    .mobile{
+        display: block;
+    }
 }

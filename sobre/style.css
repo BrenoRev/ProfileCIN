@@ -1,0 +1,181 @@
+/* Geral */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+*{
+    --principal-bg: #CCCCCC;
+    --secundaria-bg: #4F4F4F;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: var(--principal-bg);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.mobile{
+    display: none;
+}
+
+/* Header */ 
+
+#header{
+    position: absolute;
+    background-color: var(--secundaria-bg);
+    height: 100%;
+    width: 100px;
+    left: -200px;
+
+    box-shadow: 0px -3px 3px var(--principal-bg)
+}
+
+li > a{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 5px;
+    display: block;
+    color: white;
+}
+li > a:hover{
+    background-color: var(--principal-bg);
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+ul{
+    position: relative;
+    top: 80px;
+    list-style: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ #header{
+    transform: translateX(200px);
+}
+
+#img_menu{
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    width: 60px;
+}
+
+label {
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+}
+
+label:hover{
+    width: 95px;
+    border: 2px rgb(117, 117, 122) dashed;
+}
+#img_menu:hover{
+    background-color: transparent;
+}
+
+/* Footer */
+
+#footer{
+    position: fixed;
+    bottom: 0;
+
+    box-shadow: 0px -3px 3px var(--principal-bg);
+    background-color: var(--secundaria-bg);
+
+    padding: 10px;
+
+    height: max-content;
+    width: 100%;
+}
+
+
+#footer > span {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* Principal */
+
+.projetos{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+#secao{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.conteudo{
+    margin-top: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    width: 460px;
+    height: 654px;
+}
+
+
+.imagem{
+    background-size: cover;
+    height: 400px;
+    padding-left: 20px;
+    width: 350px;
+}
+
+.topCard{
+    font-size: 60px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.cargo{
+    font-size: 16px;
+    text-align: center;
+}
+
+.tell{
+    font-size: 19px;
+    height: 10px;
+}
+
+.info{
+    background-size: cover;
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 50px;
+    width: 100%; 
+}
+
+/* Sobre */
+
+#info{
+    font-size: 14px;
+    margin: auto;
+    padding: 5px;
+    background-color: white;
+    height: 500px;
+    width: 90%;
+}
+
+@media screen and (max-width: 600px){
+    .mobile{
+        display: block;
+    }
+}
