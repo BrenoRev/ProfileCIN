@@ -25,7 +25,7 @@ a {
 /* Header */ 
 
 #header{
-    position: absolute;
+    position: fixed;
     background-color: var(--secundaria-bg);
     height: 100%;
     width: 100px;
@@ -108,7 +108,7 @@ label:hover{
 .projetos{
     position: absolute;
     top: 30px;
-    left: 150px;
+    left: 105px;
 }
 
 @media screen and (max-width: 600px){

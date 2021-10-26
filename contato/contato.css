@@ -1,0 +1,118 @@
+/* Geral */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+*{
+    --principal-bg: #CCCCCC;
+    --secundaria-bg: #4F4F4F;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: var(--principal-bg);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.mobile{
+    display: none;
+}
+
+/* Header */ 
+
+#header{
+    position: fixed;
+    background-color: var(--secundaria-bg);
+    height: 100%;
+    width: 100px;
+    left: -200px;
+
+    box-shadow: 0px -3px 3px var(--principal-bg)
+}
+
+li > a{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 5px;
+    display: block;
+    color: white;
+}
+li > a:hover{
+    background-color: var(--principal-bg);
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+ul{
+    position: relative;
+    top: 80px;
+    list-style: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ #header{
+    transform: translateX(200px);
+}
+
+#img_menu{
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    width: 60px;
+}
+
+label {
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+}
+
+label:hover{
+    width: 95px;
+    border: 2px rgb(117, 117, 122) dashed;
+}
+#img_menu:hover{
+    background-color: transparent;
+}
+
+/* Footer */
+
+#footer{
+    position: fixed;
+    bottom: 0;
+
+    box-shadow: 0px -3px 3px var(--principal-bg);
+    background-color: var(--secundaria-bg);
+
+    padding: 10px;
+
+    height: max-content;
+    width: 100%;
+}
+
+
+#footer > span {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* Principal */
+
+.projetos{
+    position: absolute;
+    top: 30px;
+    left: 105px;
+}
+
+@media screen and (max-width: 600px){
+    .mobile{
+        display: block;
+    }
+}
