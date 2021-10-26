@@ -97,6 +97,9 @@ label:hover{
     width: 100%;
 }
 
+.mobile{
+    display: none;
+}
 
 #footer > span {
     color: white;
